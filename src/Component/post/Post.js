@@ -1,4 +1,5 @@
 import React from 'react';
+import '../ListBook.css';
 
 const Post = (props) => {
     return(

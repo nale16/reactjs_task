@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import axios from 'axios';
 import Post from './post/Post';
-// import ListBook from'./Lis'
+import './ListBook.css'
 
 
 class ListBook extends Component{
@@ -77,10 +77,9 @@ class ListBook extends Component{
   render(){
     return(
       <Fragment>
-        <p>Hello</p>
-        <div className="form-add-data">
-          <label hrmlFor="title">Title</label>
-          <input type="text" id="title" name="title" placeholder="title" onChange={this.handleFromChange} />
+        <div className="form-style-6">
+          <label hrmlFor="title" class="form_label">Title</label>
+          <input type="text" class="form_field" id="title" name="title" placeholder="title" onChange={this.handleFromChange} />
           <label hrmlFor="category">Category</label>
           <input type="text" id="category" name="category" placeholder="category" onChange={this.handleFromChange} />
           <label hrmlFor="description">Description</label>
